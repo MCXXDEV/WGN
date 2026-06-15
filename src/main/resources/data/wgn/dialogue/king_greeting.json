@@ -1,0 +1,10 @@
+{
+	"id": "king_greeting",
+	"speaker": "King",
+	"text": "Welcome to our kingdom, traveler. Our roads and cities are yours to explore.",
+	"choices": [
+		{ "text": "Tell me about this kingdom.", "next": "king_lore", "reputationDelta": 2 },
+		{ "text": "Do you have work for me?", "next": "king_quest", "startsQuest": "explore_abandoned_village" },
+		{ "text": "Farewell.", "next": "" }
+	]
+}

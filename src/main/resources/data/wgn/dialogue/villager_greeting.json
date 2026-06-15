@@ -1,0 +1,8 @@
+{
+	"id": "villager_greeting",
+	"speaker": "Villager",
+	"text": "The roads connect us all. Markets, farms, and towers keep the realm alive.",
+	"choices": [
+		{ "text": "Good day.", "next": "", "reputationDelta": 1 }
+	]
+}

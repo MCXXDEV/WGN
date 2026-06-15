@@ -5,7 +5,7 @@ import dev.mcxxdev.wgn.core.WgnModule;
 import dev.mcxxdev.wgn.core.registry.WgnRegistries;
 
 /**
- * WGN-NPCs — human NPC system with daily routines, trade, travel, and defense.
+ * WGN-NPCs — human NPC entities with roles, dialogue, and routines.
  */
 public final class NpcsModule implements WgnModule {
 	@Override
@@ -25,8 +25,9 @@ public final class NpcsModule implements WgnModule {
 
 	@Override
 	public void initialize() {
+		WgnEntities.register();
 		WGN.LOGGER.info(
-				"Human NPC system registered — {} roles, {} behaviors",
+				"NPC entities registered — {} roles, {} behaviors",
 				WgnRegistries.NPC_ROLES.size(),
 				WgnRegistries.NPC_BEHAVIORS.size()
 		);

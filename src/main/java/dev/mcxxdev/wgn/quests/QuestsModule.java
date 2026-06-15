@@ -4,7 +4,7 @@ import dev.mcxxdev.wgn.WGN;
 import dev.mcxxdev.wgn.core.WgnModule;
 
 /**
- * WGN-Quests — dynamic adventures unlocked through reputation and world events.
+ * WGN-Quests — reputation-gated dynamic adventures.
  */
 public final class QuestsModule implements WgnModule {
 	@Override
@@ -19,11 +19,11 @@ public final class QuestsModule implements WgnModule {
 
 	@Override
 	public String[] dependencies() {
-		return new String[] { "wgn-core", "wgn-factions", "wgn-economy", "wgn-dungeons" };
+		return new String[] { "wgn-core", "wgn-factions", "wgn-economy" };
 	}
 
 	@Override
 	public void initialize() {
-		WGN.LOGGER.info("Quest and adventure system registered");
+		WGN.LOGGER.info("Quest system active — data-driven quests with coin and reputation rewards");
 	}
 }

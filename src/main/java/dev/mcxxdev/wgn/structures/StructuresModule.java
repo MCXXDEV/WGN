@@ -6,7 +6,6 @@ import dev.mcxxdev.wgn.core.registry.WgnRegistries;
 
 /**
  * WGN-Structures — structure blueprint database, templates, and material palettes.
- * Target: 100,000+ procedural structure blueprints.
  */
 public final class StructuresModule implements WgnModule {
 	@Override
@@ -21,13 +20,13 @@ public final class StructuresModule implements WgnModule {
 
 	@Override
 	public String[] dependencies() {
-		return new String[] { "wgn-core", "wgn-worldgen" };
+		return new String[] { "wgn-core" };
 	}
 
 	@Override
 	public void initialize() {
 		WGN.LOGGER.info(
-				"Structure database registered — {} categories, {} material palettes",
+				"Structure system ready — {} categories, {} palettes, procedural builder active",
 				WgnRegistries.STRUCTURE_CATEGORIES.size(),
 				WgnRegistries.MATERIAL_PALETTES.size()
 		);

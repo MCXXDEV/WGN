@@ -5,7 +5,7 @@ import dev.mcxxdev.wgn.core.WgnModule;
 import dev.mcxxdev.wgn.core.registry.WgnRegistries;
 
 /**
- * WGN-Dungeons — crypts, ruins, catacombs, strongholds, temples, and boss arenas.
+ * WGN-Dungeons — crypts, ruins, catacombs, strongholds, temples, boss arenas.
  */
 public final class DungeonsModule implements WgnModule {
 	@Override
@@ -20,13 +20,13 @@ public final class DungeonsModule implements WgnModule {
 
 	@Override
 	public String[] dependencies() {
-		return new String[] { "wgn-core", "wgn-worldgen", "wgn-structures" };
+		return new String[] { "wgn-core", "wgn-structures" };
 	}
 
 	@Override
 	public void initialize() {
 		WGN.LOGGER.info(
-				"Dungeon system registered — {} types, {} features",
+				"Dungeon generator ready — {} types, {} features",
 				WgnRegistries.DUNGEON_TYPES.size(),
 				WgnRegistries.DUNGEON_FEATURES.size()
 		);

@@ -29,4 +29,13 @@ public enum StructureCategory implements Identifiable {
 	public String id() {
 		return id;
 	}
+
+	public static StructureCategory fromId(String id) {
+		for (StructureCategory category : values()) {
+			if (category.id.equals(id)) {
+				return category;
+			}
+		}
+		return HOUSE;
+	}
 }

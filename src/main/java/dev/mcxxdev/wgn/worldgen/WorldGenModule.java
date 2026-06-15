@@ -5,7 +5,7 @@ import dev.mcxxdev.wgn.core.WgnModule;
 import dev.mcxxdev.wgn.core.registry.WgnRegistries;
 
 /**
- * WGN-WorldGen — infinite terrain, biomes, and chunk-level discovery hooks.
+ * WGN-WorldGen — kingdom chunk generation, roads, settlements, dungeons.
  */
 public final class WorldGenModule implements WgnModule {
 	@Override
@@ -20,15 +20,15 @@ public final class WorldGenModule implements WgnModule {
 
 	@Override
 	public String[] dependencies() {
-		return new String[] { "wgn-core" };
+		return new String[] { "wgn-core", "wgn-structures", "wgn-kingdoms", "wgn-dungeons", "wgn-npcs" };
 	}
 
 	@Override
 	public void initialize() {
+		KingdomChunkGenerator.register();
 		WGN.LOGGER.info(
-				"World generation registered — {} exploration features, {} story features",
-				WgnRegistries.EXPLORATION_FEATURES.size(),
-				WgnRegistries.WORLD_STORY_FEATURES.size()
+				"World generation active — chunk kingdoms, {} exploration features",
+				WgnRegistries.EXPLORATION_FEATURES.size()
 		);
 	}
 }

@@ -1,0 +1,9 @@
+{
+	"id": "king_quest",
+	"speaker": "King",
+	"text": "An abandoned village was spotted to the east. Investigate it for the crown.",
+	"choices": [
+		{ "text": "I accept.", "next": "", "startsQuest": "explore_abandoned_village", "reputationDelta": 5 },
+		{ "text": "Not now.", "next": "" }
+	]
+}

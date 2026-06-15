@@ -4,7 +4,7 @@ import dev.mcxxdev.wgn.WGN;
 import dev.mcxxdev.wgn.core.WgnModule;
 
 /**
- * WGN-Economy — trade, markets, and economic simulation across settlements.
+ * WGN-Economy — WGN coins, trade, and market rewards.
  */
 public final class EconomyModule implements WgnModule {
 	@Override
@@ -19,11 +19,12 @@ public final class EconomyModule implements WgnModule {
 
 	@Override
 	public String[] dependencies() {
-		return new String[] { "wgn-core", "wgn-kingdoms", "wgn-npcs" };
+		return new String[] { "wgn-core", "wgn-npcs" };
 	}
 
 	@Override
 	public void initialize() {
-		WGN.LOGGER.info("Economy and trade system registered");
+		WGN.LOGGER.info("Economy active — WGN coins, emerald trade (buy {}, sell {})",
+				EconomyManager.EMERALD_BUY_PRICE, EconomyManager.EMERALD_SELL_PRICE);
 	}
 }

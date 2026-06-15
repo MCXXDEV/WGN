@@ -2,6 +2,7 @@ package dev.mcxxdev.wgn.factions;
 
 import dev.mcxxdev.wgn.WGN;
 import dev.mcxxdev.wgn.core.WgnModule;
+import dev.mcxxdev.wgn.core.registry.WgnRegistries;
 
 /**
  * WGN-Factions — reputation system where factions remember player actions.
@@ -24,6 +25,10 @@ public final class FactionsModule implements WgnModule {
 
 	@Override
 	public void initialize() {
-		WGN.LOGGER.info("Faction reputation system registered");
+		WGN.LOGGER.info(
+				"Faction reputation registered — {} actions, {} unlocks",
+				WgnRegistries.REPUTATION_ACTIONS.size(),
+				WgnRegistries.REPUTATION_UNLOCKS.size()
+		);
 	}
 }

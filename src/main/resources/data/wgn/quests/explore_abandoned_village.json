@@ -1,0 +1,7 @@
+{
+	"id": "explore_abandoned_village",
+	"display_name": "Echoes of the Past",
+	"required_reputation": 0,
+	"story_feature": "abandoned_village",
+	"rewards": ["wgn:explorer_title"]
+}

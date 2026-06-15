@@ -1,0 +1,11 @@
+{
+	"id": "medieval",
+	"blocks": [
+		"minecraft:stone_bricks",
+		"minecraft:cobblestone",
+		"minecraft:spruce_planks",
+		"minecraft:dark_oak_planks",
+		"minecraft:lantern",
+		"minecraft:barrel"
+	]
+}

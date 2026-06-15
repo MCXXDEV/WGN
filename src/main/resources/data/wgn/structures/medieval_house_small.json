@@ -1,0 +1,8 @@
+{
+	"id": "medieval_house_small",
+	"category": "house",
+	"palette": "wgn:medieval",
+	"size": [7, 5, 9],
+	"placement": "surface",
+	"weight": 100
+}

@@ -1,0 +1,10 @@
+{
+	"id": "northern",
+	"blocks": [
+		"minecraft:spruce_log",
+		"minecraft:stone",
+		"minecraft:campfire",
+		"minecraft:dark_oak_log",
+		"minecraft:spruce_planks"
+	]
+}

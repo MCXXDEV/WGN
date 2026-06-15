@@ -1,0 +1,8 @@
+{
+	"id": "ancient_kingdom",
+	"display_name": "Ancient Kingdom",
+	"palette": "wgn:ancient",
+	"settlements": ["ruin", "temple", "tower", "outpost"],
+	"generation_methods": ["jigsaw_structure", "building_template"],
+	"default_roles": ["scholar", "guard", "hunter"]
+}

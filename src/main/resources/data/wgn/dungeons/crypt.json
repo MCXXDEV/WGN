@@ -1,0 +1,8 @@
+{
+	"id": "crypt",
+	"display_name": "Crypt",
+	"type": "crypt",
+	"features": ["loot_room", "trap", "secret", "boss_room"],
+	"min_depth": 16,
+	"max_depth": 48
+}

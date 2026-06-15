@@ -69,6 +69,7 @@ graph TD
 
 - `WgnModule` contract
 - `ModuleRegistry` topological bootstrap
+- `WgnRegistry` / `WgnRegistries` — central content registries
 - Shared constants and cross-cutting utilities
 
 ### WGN-WorldGen
@@ -120,17 +121,21 @@ graph TD
 - Quest journal
 - Kingdom/exploration overlays
 
-## Data Layout (planned)
+## Data Layout
 
 ```
 src/main/resources/data/wgn/
+  civilizations/    # Kingdom archetype configs (7 civilizations)
+  palettes/         # Material intelligence block palettes
   structures/       # Blueprint definitions
-  civilizations/    # Kingdom archetype configs
+  roads/            # Road network templates
   dungeons/         # Dungeon templates
   npcs/             # Role and behavior data
-  factions/         # Faction definitions
+  factions/         # Faction definitions and reputation thresholds
   quests/           # Quest chains
 ```
+
+Example data files are included for each category. Loaders will parse these in future phases.
 
 ## Roadmap
 

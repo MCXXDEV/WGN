@@ -137,7 +137,7 @@ WGN should feel like Minecraft evolved into a **living fantasy world simulator**
 
 ## Project Status
 
-**v0.2.0-alpha** — Runtime systems implemented:
+**v0.3.0-alpha** — Runtime systems + **/wgn build** command for natural-language structure generation.
 
 | System | Status |
 |--------|--------|

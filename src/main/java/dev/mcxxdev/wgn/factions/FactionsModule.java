@@ -20,13 +20,13 @@ public final class FactionsModule implements WgnModule {
 
 	@Override
 	public String[] dependencies() {
-		return new String[] { "wgn-core", "wgn-kingdoms", "wgn-npcs" };
+		return new String[] { "wgn-core", "wgn-kingdoms" };
 	}
 
 	@Override
 	public void initialize() {
 		WGN.LOGGER.info(
-				"Faction reputation registered — {} actions, {} unlocks",
+				"Reputation system active — {} actions, {} unlock tiers",
 				WgnRegistries.REPUTATION_ACTIONS.size(),
 				WgnRegistries.REPUTATION_UNLOCKS.size()
 		);

@@ -1,0 +1,9 @@
+{
+	"id": "merchant_greeting",
+	"speaker": "Merchant",
+	"text": "Fine wares and fair prices. WGN coins open many doors.",
+	"choices": [
+		{ "text": "Show me your goods.", "next": "", "reputationDelta": 1 },
+		{ "text": "Maybe later.", "next": "" }
+	]
+}

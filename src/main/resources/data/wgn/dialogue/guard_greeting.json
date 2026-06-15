@@ -1,0 +1,9 @@
+{
+	"id": "guard_greeting",
+	"speaker": "Guard",
+	"text": "Keep the peace within our walls and you shall have no trouble.",
+	"choices": [
+		{ "text": "Understood.", "next": "", "reputationDelta": 1 },
+		{ "text": "Any dangers outside?", "next": "", "reputationDelta": 2 }
+	]
+}

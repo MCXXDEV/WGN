@@ -1,0 +1,9 @@
+{
+	"id": "king_lore",
+	"speaker": "King",
+	"text": "We are a living civilization — cities, villages, roads, and dungeons spread across the realm.",
+	"choices": [
+		{ "text": "Impressive.", "next": "", "reputationDelta": 3 },
+		{ "text": "Any threats nearby?", "next": "king_quest", "startsQuest": "explore_abandoned_village" }
+	]
+}

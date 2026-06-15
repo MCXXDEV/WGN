@@ -29,4 +29,13 @@ public enum NpcRole implements Identifiable {
 	public String id() {
 		return id;
 	}
+
+	public static NpcRole fromId(String id) {
+		for (NpcRole role : values()) {
+			if (role.id.equals(id)) {
+				return role;
+			}
+		}
+		return FARMER;
+	}
 }

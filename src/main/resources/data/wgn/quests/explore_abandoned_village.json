@@ -1,7 +1,11 @@
 {
 	"id": "explore_abandoned_village",
-	"display_name": "Echoes of the Past",
-	"required_reputation": 0,
-	"story_feature": "abandoned_village",
-	"rewards": ["wgn:explorer_title"]
+	"displayName": "Echoes of the Past",
+	"description": "Investigate an abandoned village and report back to the kingdom.",
+	"requiredReputation": 0,
+	"factionId": "medieval_kingdom",
+	"storyFeature": "abandoned_village",
+	"coinReward": 15,
+	"reputationReward": 10,
+	"objectives": ["Find the abandoned village", "Return to the king"]
 }

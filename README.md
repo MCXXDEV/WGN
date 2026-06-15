@@ -137,7 +137,29 @@ WGN should feel like Minecraft evolved into a **living fantasy world simulator**
 
 ## Project Status
 
-**v0.1.0-alpha** — Foundation scaffold. Module registry, package structure, and subsystem stubs are in place. World generation, structures, NPCs, and gameplay systems are under active development.
+**v0.2.0-alpha** — Runtime systems implemented:
+
+| System | Status |
+|--------|--------|
+| World generation | Kingdoms generate per 1024-block region on chunk creation |
+| Cities / Villages / Roads | Capitals, cities, villages, farms, markets, castles, trade roads |
+| Dungeons | Underground crypts with loot, traps, boss rooms |
+| Human NPCs | `wgn_npc` entity — walk, interact, defend settlements |
+| Structure database | JSON blueprints + procedural builder with material palettes |
+| Reputation | Faction memory — help kingdoms / attack NPCs |
+| Economy | WGN coins (start with 25), quest rewards |
+| Quests | Data-driven quests unlocked via dialogue |
+| Dialogue | Right-click NPCs for branching conversation |
+| Custom UI | Press **J** — reputation, quest journal, coin balance |
+
+### In-game usage
+
+- Explore new chunks to discover kingdoms (every ~1024 blocks)
+- **Right-click** any WGN NPC to open dialogue
+- Press **J** to open the WGN menu
+- `/wgn quest start explore_abandoned_village` — start a quest manually
+- `/wgn coins give 50` — grant coins (testing)
+- `/wgn reputation add medieval_kingdom 10` — adjust reputation
 
 ## License
 

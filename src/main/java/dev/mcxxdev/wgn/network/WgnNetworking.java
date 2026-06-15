@@ -76,8 +76,14 @@ public final class WgnNetworking {
 
 	private WgnNetworking() {}
 
-	/** Register packet types once from common init (must not run on client init). */
+	private static boolean payloadTypesRegistered;
+
+	/** Register packet types once per JVM (integrated client runs common + client entrypoints). */
 	public static void registerPayloadTypes() {
+		if (payloadTypesRegistered) {
+			return;
+		}
+		payloadTypesRegistered = true;
 		PayloadTypeRegistry.playS2C().register(PlayerDataPayload.TYPE, PlayerDataPayload.CODEC);
 		PayloadTypeRegistry.playS2C().register(OpenDialoguePayload.TYPE, OpenDialoguePayload.CODEC);
 		PayloadTypeRegistry.playC2S().register(DialogueChoicePayload.TYPE, DialogueChoicePayload.CODEC);

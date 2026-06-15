@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "wgn",
+	"version": "${version}",
+	"name": "World Generation Nexus",
+	"description": "A next-generation procedural world generation framework for Minecraft — civilizations, kingdoms, cities, dungeons, factions, NPCs, and dynamic adventures.",
+	"authors": [
+		"MCXXDEV"
+	],
+	"contact": {
+		"homepage": "https://github.com/MCXXDEV/WGN",
+		"sources": "https://github.com/MCXXDEV/WGN"
+	},
+	"license": "MIT",
+	"icon": "assets/wgn/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.mcxxdev.wgn.WGN"
+		],
+		"client": [
+			"dev.mcxxdev.wgn.client.WGNClient"
+		]
+	},
+	"mixins": [
+		"wgn.mixins.json",
+		{
+			"config": "wgn.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

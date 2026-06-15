@@ -3,7 +3,7 @@
 	"id": "wgn",
 	"version": "${version}",
 	"name": "World Generation Nexus",
-	"description": "A next-generation procedural world generation framework for Minecraft — civilizations, kingdoms, cities, dungeons, factions, NPCs, and dynamic adventures.",
+	"description": "Big procedural structure generation for Minecraft — /wgn build to create anything you describe, plus automatic kingdoms and cities in new chunks.",
 	"authors": [
 		"MCXXDEV"
 	],

@@ -1,10 +1,7 @@
 package dev.mcxxdev.wgn.npcs;
 
-import dev.mcxxdev.wgn.core.WgnIdentifiers;
-import dev.mcxxdev.wgn.dialogue.DialogueManager;
 import dev.mcxxdev.wgn.kingdoms.CivilizationType;
 import dev.mcxxdev.wgn.kingdoms.SettlementType;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -82,17 +79,11 @@ public class WgnNpcEntity extends PathfinderMob {
 
 	@Override
 	public InteractionResult mobInteract(Player player, InteractionHand hand) {
-		if (!level().isClientSide && player instanceof ServerPlayer serverPlayer) {
-			DialogueManager.open(serverPlayer, getDialogueId(), getFactionId());
-		}
-		return InteractionResult.SUCCESS;
+		return InteractionResult.PASS;
 	}
 
 	@Override
 	public void die(DamageSource source) {
-		if (!level().isClientSide && source.getEntity() instanceof ServerPlayer player) {
-			dev.mcxxdev.wgn.factions.ReputationManager.apply(player, getFactionId(), dev.mcxxdev.wgn.factions.ReputationAction.ATTACK_VILLAGERS);
-		}
 		super.die(source);
 	}
 

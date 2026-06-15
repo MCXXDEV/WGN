@@ -1,12 +1,6 @@
 package dev.mcxxdev.wgn.core;
 
 import dev.mcxxdev.wgn.WGN;
-import dev.mcxxdev.wgn.dungeons.DungeonsModule;
-import dev.mcxxdev.wgn.economy.EconomyModule;
-import dev.mcxxdev.wgn.factions.FactionsModule;
-import dev.mcxxdev.wgn.kingdoms.KingdomsModule;
-import dev.mcxxdev.wgn.npcs.NpcsModule;
-import dev.mcxxdev.wgn.quests.QuestsModule;
 import dev.mcxxdev.wgn.structures.StructuresModule;
 import dev.mcxxdev.wgn.worldgen.WorldGenModule;
 
@@ -16,8 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Registry-driven bootstrap for all WGN modules. Modules are discovered,
- * topologically sorted by dependencies, and initialized in order.
+ * Registry-driven bootstrap for WGN structure generation modules.
  */
 public final class ModuleRegistry {
 	private static final Map<String, WgnModule> MODULES = new LinkedHashMap<>();
@@ -25,14 +18,8 @@ public final class ModuleRegistry {
 
 	static {
 		register(new CoreModule());
-		register(new WorldGenModule());
 		register(new StructuresModule());
-		register(new KingdomsModule());
-		register(new NpcsModule());
-		register(new DungeonsModule());
-		register(new FactionsModule());
-		register(new EconomyModule());
-		register(new QuestsModule());
+		register(new WorldGenModule());
 	}
 
 	private ModuleRegistry() {}
@@ -58,10 +45,6 @@ public final class ModuleRegistry {
 		return MODULES.size();
 	}
 
-	public static WgnModule get(String id) {
-		return MODULES.get(id);
-	}
-
 	private static List<WgnModule> topologicalSort() {
 		List<WgnModule> sorted = new ArrayList<>();
 		Map<String, Boolean> visited = new LinkedHashMap<>();
@@ -84,8 +67,6 @@ public final class ModuleRegistry {
 			WgnModule dependency = MODULES.get(dep);
 			if (dependency != null) {
 				visit(dependency, visited, sorted);
-			} else {
-				WGN.LOGGER.warn("Module {} declares missing dependency: {}", module.id(), dep);
 			}
 		}
 

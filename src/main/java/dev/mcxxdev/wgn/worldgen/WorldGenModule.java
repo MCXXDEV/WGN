@@ -2,10 +2,10 @@ package dev.mcxxdev.wgn.worldgen;
 
 import dev.mcxxdev.wgn.WGN;
 import dev.mcxxdev.wgn.core.WgnModule;
-import dev.mcxxdev.wgn.core.registry.WgnRegistries;
+import dev.mcxxdev.wgn.npcs.WgnEntities;
 
 /**
- * WGN-WorldGen — kingdom chunk generation, roads, settlements, dungeons.
+ * WGN-WorldGen — automatic kingdoms, cities, roads, and dungeons in new chunks.
  */
 public final class WorldGenModule implements WgnModule {
 	@Override
@@ -20,15 +20,13 @@ public final class WorldGenModule implements WgnModule {
 
 	@Override
 	public String[] dependencies() {
-		return new String[] { "wgn-core", "wgn-structures", "wgn-kingdoms", "wgn-dungeons", "wgn-npcs" };
+		return new String[] { "wgn-core", "wgn-structures" };
 	}
 
 	@Override
 	public void initialize() {
+		WgnEntities.register();
 		KingdomChunkGenerator.register();
-		WGN.LOGGER.info(
-				"World generation active — chunk kingdoms, {} exploration features",
-				WgnRegistries.EXPLORATION_FEATURES.size()
-		);
+		WGN.LOGGER.info("Automatic structure generation active in new chunks");
 	}
 }

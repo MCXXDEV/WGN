@@ -30,6 +30,7 @@ public final class CoreModule implements WgnModule {
 	@Override
 	public void initialize() {
 		WgnRegistries.bootstrap();
+		WgnNetworking.registerPayloadTypes();
 		WgnDataLoader.register();
 		WgnNetworking.registerServer();
 		WgnCommands.register();

@@ -76,11 +76,14 @@ public final class WgnNetworking {
 
 	private WgnNetworking() {}
 
-	public static void registerServer() {
+	/** Register packet types once from common init (must not run on client init). */
+	public static void registerPayloadTypes() {
 		PayloadTypeRegistry.playS2C().register(PlayerDataPayload.TYPE, PlayerDataPayload.CODEC);
-		PayloadTypeRegistry.playC2S().register(DialogueChoicePayload.TYPE, DialogueChoicePayload.CODEC);
 		PayloadTypeRegistry.playS2C().register(OpenDialoguePayload.TYPE, OpenDialoguePayload.CODEC);
+		PayloadTypeRegistry.playC2S().register(DialogueChoicePayload.TYPE, DialogueChoicePayload.CODEC);
+	}
 
+	public static void registerServer() {
 		ServerPlayNetworking.registerGlobalReceiver(DialogueChoicePayload.TYPE, (payload, context) ->
 				context.server().execute(() -> DialogueManager.choose(
 						context.player(),

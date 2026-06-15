@@ -1,0 +1,8 @@
+{
+	"id": "kingdom_highway",
+	"display_name": "Kingdom Highway",
+	"width": 7,
+	"surface": "minecraft:stone_bricks",
+	"connects": ["capital", "city", "castle"],
+	"bridge_on_water": true
+}

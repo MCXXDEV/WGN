@@ -1,0 +1,8 @@
+{
+	"id": "desert_empire",
+	"display_name": "Desert Empire",
+	"palette": "wgn:desert",
+	"settlements": ["capital", "city", "market", "tower", "outpost"],
+	"generation_methods": ["jigsaw_structure", "district_system", "road_system"],
+	"default_roles": ["king", "merchant", "guard", "scholar", "builder"]
+}

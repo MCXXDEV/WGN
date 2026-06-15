@@ -1,0 +1,8 @@
+{
+	"id": "northern_clan",
+	"display_name": "Northern Clan",
+	"palette": "wgn:northern",
+	"settlements": ["village", "outpost", "farm", "tower"],
+	"generation_methods": ["jigsaw_structure", "road_system", "building_template"],
+	"default_roles": ["hunter", "guard", "blacksmith", "innkeeper"]
+}

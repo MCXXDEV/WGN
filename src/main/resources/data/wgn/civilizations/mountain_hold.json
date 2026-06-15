@@ -1,0 +1,8 @@
+{
+	"id": "mountain_hold",
+	"display_name": "Mountain Hold",
+	"palette": "wgn:mountain",
+	"settlements": ["castle", "village", "outpost", "tower", "farm"],
+	"generation_methods": ["jigsaw_structure", "building_template", "road_system"],
+	"default_roles": ["miner", "guard", "blacksmith", "builder"]
+}

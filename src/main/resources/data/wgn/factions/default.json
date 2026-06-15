@@ -1,0 +1,14 @@
+{
+	"id": "default",
+	"display_name": "Default Faction",
+	"actions": {
+		"help_kingdom": 10,
+		"attack_villagers": -25
+	},
+	"unlocks": {
+		"quests": 50,
+		"trades": 25,
+		"rewards": 75,
+		"titles": 100
+	}
+}

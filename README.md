@@ -99,7 +99,22 @@ WGN is **modular**, **scalable**, **registry-driven**, and **data-driven**.
 | WGN-Quests | `dev.mcxxdev.wgn.quests` | Dynamic adventures |
 | WGN-UI | `dev.mcxxdev.wgn.ui` | Client interfaces |
 
-See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for technical design details.
+See [docs/VISION.md](docs/VISION.md) for the complete product vision and [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for technical design details.
+
+## Technical Requirements
+
+| Requirement | Value |
+|-------------|-------|
+| Minecraft | 1.21.1 |
+| Loader | Fabric |
+| API | Fabric API |
+| Java | 21 |
+
+**Architecture:** Modular · Scalable · Registry Driven · Data Driven · Enterprise Quality
+
+## End Goal
+
+WGN should feel like Minecraft evolved into a **living fantasy world simulator** — where players discover kingdoms, cities, roads, dungeons, factions, NPCs, bosses, and adventures generated naturally across an effectively endless world.
 
 ## Development
 

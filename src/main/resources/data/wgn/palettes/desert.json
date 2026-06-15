@@ -1,0 +1,9 @@
+{
+	"id": "desert",
+	"blocks": [
+		"minecraft:sandstone",
+		"minecraft:terracotta",
+		"minecraft:smooth_sandstone",
+		"minecraft:cut_sandstone"
+	]
+}

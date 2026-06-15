@@ -1,0 +1,6 @@
+{
+	"id": "king",
+	"display_name": "King",
+	"behaviors": ["walk", "work", "sleep", "defend_city"],
+	"workplace": "castle"
+}

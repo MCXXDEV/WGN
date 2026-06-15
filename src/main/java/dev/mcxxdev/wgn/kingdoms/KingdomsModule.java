@@ -2,6 +2,7 @@ package dev.mcxxdev.wgn.kingdoms;
 
 import dev.mcxxdev.wgn.WGN;
 import dev.mcxxdev.wgn.core.WgnModule;
+import dev.mcxxdev.wgn.core.registry.WgnRegistries;
 
 /**
  * WGN-Kingdoms — procedural kingdom generation via jigsaw structures,
@@ -25,6 +26,11 @@ public final class KingdomsModule implements WgnModule {
 
 	@Override
 	public void initialize() {
-		WGN.LOGGER.info("Civilization engine registered (kingdoms, cities, villages, roads)");
+		WGN.LOGGER.info(
+				"Civilization engine registered — {} types, {} settlements, {} road types",
+				WgnRegistries.CIVILIZATIONS.size(),
+				WgnRegistries.SETTLEMENTS.size(),
+				WgnRegistries.ROADS.size()
+		);
 	}
 }

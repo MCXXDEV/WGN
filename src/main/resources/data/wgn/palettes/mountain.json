@@ -1,0 +1,10 @@
+{
+	"id": "mountain",
+	"blocks": [
+		"minecraft:stone",
+		"minecraft:stone_bricks",
+		"minecraft:andesite",
+		"minecraft:polished_andesite",
+		"minecraft:torch"
+	]
+}

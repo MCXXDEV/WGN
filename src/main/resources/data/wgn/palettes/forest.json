@@ -1,0 +1,10 @@
+{
+	"id": "forest",
+	"blocks": [
+		"minecraft:oak_log",
+		"minecraft:mossy_cobblestone",
+		"minecraft:vine",
+		"minecraft:oak_leaves",
+		"minecraft:lantern"
+	]
+}

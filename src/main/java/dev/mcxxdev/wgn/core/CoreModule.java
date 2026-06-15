@@ -1,6 +1,7 @@
 package dev.mcxxdev.wgn.core;
 
 import dev.mcxxdev.wgn.WGN;
+import dev.mcxxdev.wgn.core.registry.WgnRegistries;
 
 /**
  * WGN-Core — foundation module providing registry infrastructure,
@@ -19,6 +20,12 @@ public final class CoreModule implements WgnModule {
 
 	@Override
 	public void initialize() {
-		WGN.LOGGER.info("Core registry and shared infrastructure ready");
+		WgnRegistries.bootstrap();
+		WGN.LOGGER.info(
+				"Core registries ready — {} civilizations, {} structure categories, {} NPC roles",
+				WgnRegistries.CIVILIZATIONS.size(),
+				WgnRegistries.STRUCTURE_CATEGORIES.size(),
+				WgnRegistries.NPC_ROLES.size()
+		);
 	}
 }

@@ -1,0 +1,31 @@
+{
+	"id": "medieval_kingdom",
+	"display_name": "Medieval Kingdom",
+	"palette": "wgn:medieval",
+	"settlements": [
+		"capital",
+		"city",
+		"village",
+		"castle",
+		"tower",
+		"farm",
+		"market",
+		"outpost"
+	],
+	"generation_methods": [
+		"jigsaw_structure",
+		"district_system",
+		"road_system",
+		"building_template"
+	],
+	"default_roles": [
+		"king",
+		"queen",
+		"knight",
+		"guard",
+		"merchant",
+		"farmer",
+		"blacksmith",
+		"builder"
+	]
+}

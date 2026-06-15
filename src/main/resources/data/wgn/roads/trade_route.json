@@ -1,0 +1,8 @@
+{
+	"id": "trade_route",
+	"display_name": "Trade Route",
+	"width": 5,
+	"surface": "minecraft:gravel",
+	"connects": ["city", "market", "village"],
+	"bridge_on_water": true
+}

@@ -1,0 +1,8 @@
+{
+	"id": "forest_realm",
+	"display_name": "Forest Realm",
+	"palette": "wgn:forest",
+	"settlements": ["village", "city", "farm", "tower", "market"],
+	"generation_methods": ["district_system", "road_system", "building_template"],
+	"default_roles": ["hunter", "farmer", "scholar", "merchant"]
+}

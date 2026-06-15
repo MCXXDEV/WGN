@@ -1,0 +1,6 @@
+{
+	"id": "farmer",
+	"display_name": "Farmer",
+	"behaviors": ["walk", "work", "eat", "sleep"],
+	"workplace": "farm"
+}

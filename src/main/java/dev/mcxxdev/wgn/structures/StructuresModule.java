@@ -2,6 +2,7 @@ package dev.mcxxdev.wgn.structures;
 
 import dev.mcxxdev.wgn.WGN;
 import dev.mcxxdev.wgn.core.WgnModule;
+import dev.mcxxdev.wgn.core.registry.WgnRegistries;
 
 /**
  * WGN-Structures — structure blueprint database, templates, and material palettes.
@@ -25,6 +26,10 @@ public final class StructuresModule implements WgnModule {
 
 	@Override
 	public void initialize() {
-		WGN.LOGGER.info("Structure database and material palette system registered");
+		WGN.LOGGER.info(
+				"Structure database registered — {} categories, {} material palettes",
+				WgnRegistries.STRUCTURE_CATEGORIES.size(),
+				WgnRegistries.MATERIAL_PALETTES.size()
+		);
 	}
 }

@@ -151,12 +151,33 @@ WGN should feel like Minecraft evolved into a **living fantasy world simulator**
 | Quests | Data-driven quests unlocked via dialogue |
 | Dialogue | Right-click NPCs for branching conversation |
 | Custom UI | Press **J** — reputation, quest journal, coin balance |
+| **Build command** | `/wgn build <description>` — colors, sizes, structure types (10 coins) |
+
+### `/wgn build` — describe anything (within rules)
+
+Type what you want in chat. WGN parses **size**, **colors**, and **structure type**, then builds in front of you.
+
+**Examples:**
+- `/wgn build a big blue and red house`
+- `/wgn build huge stone castle`
+- `/wgn build small oak cottage`
+- `/wgn build large glass tower`
+- `/wgn build massive gold palace`
+
+**Supported structure types:** house, castle, tower, bridge, wall, farm, market, palace, temple, dungeon, ruin, arena, well
+
+**Supported colors:** red, blue, green, yellow, white, black, gray, orange, purple, pink, brown, gold, stone, brick, wood, glass, and more
+
+**Cost:** 10 WGN coins per build
+
+**Blocked:** adult content, slurs, trademarked/copyrighted builds (Disney, Marvel, Pokémon, etc.), inappropriate requests
 
 ### In-game usage
 
 - Explore new chunks to discover kingdoms (every ~1024 blocks)
 - **Right-click** any WGN NPC to open dialogue
 - Press **J** to open the WGN menu
+- `/wgn build a big blue and red house` — generate a structure from chat
 - `/wgn quest start explore_abandoned_village` — start a quest manually
 - `/wgn coins give 50` — grant coins (testing)
 - `/wgn reputation add medieval_kingdom 10` — adjust reputation

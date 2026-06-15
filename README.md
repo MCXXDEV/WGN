@@ -46,6 +46,7 @@ Adult content, slurs, trademarked IP (Disney, Marvel, Pokémon, etc.), and inapp
 ### Tips
 
 - Face where you want the build — it places ~4 blocks in front of you
+- **Blocks in the way are cleared first** — trees, stone, water, and terrain are removed from the build area before the structure is placed
 - Combine **size + colors + type** for best results: `/wgn build huge blue and red castle`
 
 ## Automatic world generation
